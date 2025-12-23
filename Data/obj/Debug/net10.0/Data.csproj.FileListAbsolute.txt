@@ -1,0 +1,30 @@
+/home/quedas/RiderProjects/ComercioEletronico/Data/bin/Debug/net10.0/Data.deps.json
+/home/quedas/RiderProjects/ComercioEletronico/Data/bin/Debug/net10.0/Data.dll
+/home/quedas/RiderProjects/ComercioEletronico/Data/bin/Debug/net10.0/Data.pdb
+/home/quedas/RiderProjects/ComercioEletronico/Data/bin/Debug/net10.0/BO.dll
+/home/quedas/RiderProjects/ComercioEletronico/Data/bin/Debug/net10.0/BO.pdb
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.csproj.AssemblyReference.cache
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.AssemblyInfoInputs.cache
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.AssemblyInfo.cs
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.csproj.CoreCompileInputs.cache
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.csproj.Up2Date
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.dll
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/refint/Data.dll
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/Data.pdb
+/home/quedas/RiderProjects/ComercioEletronico/Data/obj/Debug/net10.0/ref/Data.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/bin/Debug/net10.0/Data.deps.json
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/bin/Debug/net10.0/Data.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/bin/Debug/net10.0/Data.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/bin/Debug/net10.0/BO.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/bin/Debug/net10.0/BO.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.csproj.AssemblyReference.cache
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.AssemblyInfoInputs.cache
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.AssemblyInfo.cs
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.csproj.CoreCompileInputs.cache
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.csproj.Up2Date
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/refint/Data.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/Data.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/obj/Debug/net10.0/ref/Data.dll

@@ -1,0 +1,34 @@
+/home/quedas/RiderProjects/ComercioEletronico/Rules/bin/Debug/net10.0/Rules.deps.json
+/home/quedas/RiderProjects/ComercioEletronico/Rules/bin/Debug/net10.0/Rules.dll
+/home/quedas/RiderProjects/ComercioEletronico/Rules/bin/Debug/net10.0/Rules.pdb
+/home/quedas/RiderProjects/ComercioEletronico/Rules/bin/Debug/net10.0/BO.dll
+/home/quedas/RiderProjects/ComercioEletronico/Rules/bin/Debug/net10.0/Data.dll
+/home/quedas/RiderProjects/ComercioEletronico/Rules/bin/Debug/net10.0/BO.pdb
+/home/quedas/RiderProjects/ComercioEletronico/Rules/bin/Debug/net10.0/Data.pdb
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.csproj.AssemblyReference.cache
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.GeneratedMSBuildEditorConfig.editorconfig
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.AssemblyInfoInputs.cache
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.AssemblyInfo.cs
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.csproj.CoreCompileInputs.cache
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.csproj.Up2Date
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.dll
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/refint/Rules.dll
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.pdb
+/home/quedas/RiderProjects/ComercioEletronico/Rules/obj/Debug/net10.0/ref/Rules.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/Rules.deps.json
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/Rules.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/Rules.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/BO.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/Data.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/BO.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/Data.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.csproj.AssemblyReference.cache
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.GeneratedMSBuildEditorConfig.editorconfig
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.AssemblyInfoInputs.cache
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.AssemblyInfo.cs
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.csproj.CoreCompileInputs.cache
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.csproj.Up2Date
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/refint/Rules.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/ref/Rules.dll

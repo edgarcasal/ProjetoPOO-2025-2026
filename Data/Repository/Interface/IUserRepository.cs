@@ -1,5 +1,5 @@
 /*
- *	<copyright file="IUserRepo.cs"
+ *	<copyright file="IUserRepository.cs"
  *	Copyright (c) 2025 All Rights Reserved
  *	</copyright>
  * 	<author>Edgar Casal</author>

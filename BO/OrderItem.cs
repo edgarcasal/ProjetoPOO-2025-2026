@@ -59,6 +59,12 @@ public class OrderItem : IComparable
 
     #region Properties
 
+    public Product Product
+    {
+        get { return product; }
+        set { product = value; }
+    }
+
     /// <summary>
     /// Gets or Sets the unit price of the OrderItem
     /// </summary>
@@ -105,18 +111,28 @@ public class OrderItem : IComparable
     {
         OrderItem aux = obj as OrderItem;
         
-        if (aux == null)
+        if (aux == null || this.product == null || aux.product == null)
         {
             return 1;
         }
-        return this.product.CompareTo(aux.product);
+        
+        return this.Product.CompareTo(aux.Product);
     }
     
     #endregion
     
     #region Overrides
-    
- 
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+        string pName = product.ProductName;
+        return $"{pName} ({Quantity}) - {CalculateTotal()}€";
+    }
+
     #endregion
     
 

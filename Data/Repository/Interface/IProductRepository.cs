@@ -40,4 +40,11 @@ public interface IProductRepository
     /// </summary>
     /// <returns></returns>
     List<Product> GetAllProducts();
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="pname"></param>
+    /// <returns></returns>
+    List<Product> SearchProductName(string pname);
 }

@@ -80,5 +80,30 @@ public class ProductRepository:IProductRepository
         return Store.Products.Values.ToList();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="pname"></param>
+    /// <returns></returns>
+    public List<Product> SearchProductName(string pname)
+    {
+        List<Product> results = new List<Product>();
+
+        if (string.IsNullOrEmpty(pname))
+        {
+            return results;
+        }
+        
+        foreach (Product p in Store.Products.Values)
+        {
+            if (p.ProductName.ToLower().Contains(pname.ToLower()))
+            {
+                results.Add(p);
+            }
+        }
+
+        return results;
+    }
+
     #endregion
 }

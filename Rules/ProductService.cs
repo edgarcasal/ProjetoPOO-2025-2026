@@ -56,7 +56,7 @@ public class ProductService
         return true;
     }
 
-    public bool updateStock(int productId, int newStock)
+    public bool UpdateStock(int productId, int newStock)
     {
         if (newStock <= 0)
         {

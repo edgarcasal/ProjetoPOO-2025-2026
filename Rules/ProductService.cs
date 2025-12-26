@@ -56,6 +56,12 @@ public class ProductService
         return true;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="productId"></param>
+    /// <param name="newStock"></param>
+    /// <returns></returns>
     public bool UpdateStock(int productId, int newStock)
     {
         if (newStock <= 0)

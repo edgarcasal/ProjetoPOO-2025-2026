@@ -107,6 +107,22 @@ public class Campaign  //IComparable
         
         return 0;
     }
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int CompareTo(object obj)
+    {
+        Campaign aux = obj as Campaign;
+        
+        if (aux == null)
+        {
+            return 1;
+        }
+        return this.CampaignId.CompareTo(aux.CampaignId);
+    }
 
     /// <summary>
     /// This method extends the campaign end date.

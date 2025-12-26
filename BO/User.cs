@@ -20,7 +20,7 @@ namespace BO;
 /// </summary>
 /// <remarks></remarks>
 /// <example></example>
-public class User
+public class User : IComparable
 {
     #region Attributes
 
@@ -126,6 +126,22 @@ public class User
     #endregion
 
     #region OtherMethods
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int CompareTo(object obj)
+    {
+        User aux = obj as User;
+        
+        if (aux == null)
+        {
+            return 1;
+        }
+        return this.UserId.CompareTo(aux.UserId);
+    }
 
     #endregion
 
@@ -153,7 +169,7 @@ public class User
     /// <returns></returns>
     public override string ToString()
     {
-        return $"[{UserId}] {FirstName + " " + LastName} | {Email}";
+        return $"[{UserId}] - {FirstName + " " + LastName} | {Email}";
     }
 
     /// <summary>
@@ -164,6 +180,7 @@ public class User
     {
         return userId.GetHashCode();
     }
+    
 
     #endregion
         

@@ -19,7 +19,7 @@ namespace BO;
 /// </summary>
 /// <remarks></remarks>
 /// <example></example>
-public class Category
+public class Category : IComparable
 {
 
     #region Attributes
@@ -104,6 +104,22 @@ public class Category
         }
         
         return false;
+    }
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int CompareTo(object obj)
+    {
+        Category aux = obj as Category;
+        
+        if (aux == null)
+        {
+            return 1;
+        }
+        return this.CategoryId.CompareTo(aux.CategoryId);
     }
     #endregion
     

@@ -19,16 +19,15 @@ namespace BO;
 /// </summary>
 /// <remarks></remarks>
 /// <example></example>
-public class Product
+public class Product : IComparable
 {
     #region Attributes
     
     private int productId;
     private string productName;
-    private decimal price;
+    private double price;
     private int stockQuantity;
     private string brandName;
-    private int warranty;              //Warranty in months
 
     #endregion
 
@@ -46,7 +45,6 @@ public class Product
         price = -1;
         brandName = "";
         stockQuantity = -1;
-        warranty = 36;
     }
     
     /// <summary>
@@ -57,13 +55,12 @@ public class Product
     /// <param name="price">Price of the product</param>
     /// <param name="bname">Brand name of the product</param>
     /// <param name="stock">Quantity of stock for the product</param>
-    public Product(int id, string pname, decimal price, string bname, int stock)
+    public Product(int id, string pname, double price, string bname, int stock)
     {
         productId = id;
         productName = pname;
         this.price = price;
         brandName = bname;
-        warranty = 36;
         stockQuantity = stock;
     }
 
@@ -77,6 +74,7 @@ public class Product
     public int ProductId
     {
         get { return productId; }
+        set { productId = value; }
     }
 
     /// <summary>
@@ -91,7 +89,7 @@ public class Product
     /// <summary>
     /// Gets or Sets the price of the Product.
     /// </summary>
-    public decimal Price
+    public double Price
     {
         get { return price; }
         set { if (value > 0) price = value; }
@@ -145,27 +143,33 @@ public class Product
         stockQuantity += quantity;
         return true;
     }
-
+    
     /// <summary>
-    /// A method that checks if a product has stock available. 
+    /// 
     /// </summary>
-    /// <returns>Returns true if stock exists else returns false</returns>
-    public bool IsInStock()
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int CompareTo(object obj)
     {
-        if (stockQuantity > 0) return true;
+        Product aux = obj as Product;
         
-        return false;
+        if (aux == null)
+        {
+            return 1;
+        }
+        return this.ProductId.CompareTo(aux.ProductId);
     }
     
     #endregion
+
+
+    #region Overrides
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="obj"></param>
     /// <returns></returns>
-    #region Overrides
-
     public override bool Equals(object obj)
     {
         Product aux;
@@ -178,11 +182,24 @@ public class Product
         return false;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public override int GetHashCode()
+    {
+        return ProductId.GetHashCode();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+        return $"[{ProductId}] {ProductName} - {BrandName} | {Price}€ | {StockQuantity}";
+    }
     #endregion
-
-    #region Operators
-
-    #endregion
-
+    
     #endregion
 }

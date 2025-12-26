@@ -11,6 +11,16 @@ using System;
 
 namespace BO;
 
+
+
+public enum OrderStatus
+{
+    Pending,
+    Shipping,
+    Cancelled,
+    Delivered
+};
+
 /// <summary>
 /// Purpose: The purpose of this class is to link a User to the items they bought and tracking the status.
 /// Created by: Edgar Casal
@@ -18,22 +28,16 @@ namespace BO;
 /// </summary>
 /// <remarks></remarks>
 /// <example></example>
-public class Order
+public class Order : IComparable
 {
     #region Attributes
 
     private int orderId;
     private DateTime orderDate;
     private User user;
-    //adicionar uma estrutura de dados para guardar todos os items comprados (OrderItem)
+    private OrderStatus status;
     
-    private List<OrderItem> OrderedItems;
-    enum orderStatus
-    {
-        Pending,
-        Shipping,
-        Cancelled
-    };
+    public List<OrderItem> orderItems;
 
     #endregion
 
@@ -47,7 +51,8 @@ public class Order
     {
         orderId = -1;
         orderDate = DateTime.Now;
-        user = new User();
+        orderItems = new List<OrderItem>();
+        status = OrderStatus.Pending;
     }
 
     /// <summary>
@@ -60,6 +65,8 @@ public class Order
         orderId = oid;
         user = u;
         orderDate = DateTime.Now;
+        orderItems = new List<OrderItem>();
+        status = OrderStatus.Pending;
     }
 
     #endregion
@@ -74,18 +81,64 @@ public class Order
         get { return orderId; }
         set { if (value > 0) orderId = value; }
     }
+    
 
     /// <summary>
-    /// Gets the current date time of the Order
+    /// Gets or Sets the current date time of the Order
     /// </summary>
     public DateTime DateTime
     {
-        get {return DateTime.Now;}
+        get {return orderDate;}
+        set
+        {
+            orderDate = value;
+        }
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public User User
+    {
+        get { return user; }
+        set { user = value; }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public List<OrderItem> OrderItems
+    {
+        get { return orderItems; }
+        set { orderItems = value; }
+    }
+
+    public OrderStatus OrderStatus
+    {
+        get { return status; }
+        set { status = value; }
+    }
+    
 
     #endregion
 
     #region OtherMethods
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int CompareTo(object obj)
+    {
+        Order aux = obj as Order;
+        
+        if (aux == null)
+        {
+            return 1;
+        }
+        return this.DateTime.CompareTo(aux.DateTime);
+    }
 
     #endregion
 
@@ -107,11 +160,27 @@ public class Order
 
         return false;
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public override int GetHashCode()
+    {
+        return OrderId.GetHashCode();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+        return
+            $"Order #{OrderId} [{OrderStatus}] - {DateTime.ToShortDateString()} | User: {User.FirstName + " " + User.LastName}";
+    }
+
     #endregion
-
-    #region Operators
-
-    #endregion
-
+    
     #endregion
 }

@@ -18,7 +18,7 @@ namespace BO;
 /// </summary>
 /// <remarks></remarks>
 /// <example></example>
-public class Admin : User
+public class Admin : User, IComparable
 {
     #region Attributes
 
@@ -48,6 +48,24 @@ public class Admin : User
         }
     }
     
+    #endregion
+    
+    #region Other Methods
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int CompareTo(object obj)
+    {
+        Admin aux = obj as Admin;
+        
+        if (aux == null)
+        {
+            return 1;
+        }
+        return this.EmployeeId.CompareTo(aux.EmployeeId);
+    }
     #endregion
 
     #region Overrides

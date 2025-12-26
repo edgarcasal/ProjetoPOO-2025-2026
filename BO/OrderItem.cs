@@ -19,12 +19,12 @@ namespace BO;
 /// </summary>
 /// <remarks></remarks>
 /// <example></example>
-public class OrderItem
+public class OrderItem : IComparable
 {
     #region Attributes
 
     private Product product;
-    private decimal unitPrice;
+    private double unitPrice;
     private int quantity;
 
     #endregion
@@ -49,7 +49,7 @@ public class OrderItem
     /// <param name="p">Product object</param>
     /// <param name="price">Price of the product</param>
     /// <param name="n">Quantity of the product</param>
-    public OrderItem(Product p, decimal price, int n)
+    public OrderItem(Product p, double price, int n)
     {
         product = p;
         unitPrice = price;
@@ -62,7 +62,7 @@ public class OrderItem
     /// <summary>
     /// Gets or Sets the unit price of the OrderItem
     /// </summary>
-    public decimal UnitPrice
+    public double UnitPrice
     {
         get { return unitPrice;}
         set { if (value > 0) unitPrice = value; }
@@ -84,9 +84,9 @@ public class OrderItem
     /// This method calculates the total amount.
     /// </summary>
     /// <returns></returns>
-    public decimal CalculateTotal()
+    public double CalculateTotal()
     {
-        decimal total;
+        double total;
         if (quantity > 0 && unitPrice > 0)
         { 
             total = unitPrice * quantity;
@@ -95,15 +95,30 @@ public class OrderItem
 
         return 1;
     }
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public int CompareTo(object obj)
+    {
+        OrderItem aux = obj as OrderItem;
+        
+        if (aux == null)
+        {
+            return 1;
+        }
+        return this.product.CompareTo(aux.product);
+    }
+    
     #endregion
     
     #region Overrides
     
+ 
     #endregion
     
-    #region Operators
-
-    #endregion
 
     #endregion
 }

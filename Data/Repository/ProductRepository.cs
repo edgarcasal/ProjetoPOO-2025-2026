@@ -14,39 +14,40 @@ using Data.Repository.Interface;
 namespace Data.Repository;
 
 /// <summary>
-/// Purpose:
+/// Purpose: The Data Access Layer for Products.
 /// Created by: Edgar Casal
 /// Created on: 26-12-2025 14:31:13
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
 public class ProductRepository:IProductRepository
 {
     #region Methods
 
     /// <summary>
-    /// 
+    /// Adds a new product to the data dictionary.
     /// </summary>
-    /// <param name="product"></param>
-    /// <returns></returns>
+    /// <param name="product">The product object to add</param>
+    /// <returns>Returns true if successfully added</returns>
     public bool AddProduct(Product product)
     {
+        // Checks if the dictionary already contains the product
         if (Store.Products.ContainsKey(product.ProductId))
         {
             return false;
         }
         
+        // Adds the product to the dictionary
         Store.Products.Add(product.ProductId, product);
         return true;
     }
 
     /// <summary>
-    /// 
+    /// Removes a product from the data dictionary.
     /// </summary>
-    /// <param name="product"></param>
-    /// <returns></returns>
+    /// <param name="product">The product object to be removed</param>
+    /// <returns>Returns true if successfully removed</returns>
     public bool RemoveProduct(Product product)
     {
+        // Checks if the product exists in the dictionary and if so, removes it
         if (Store.Products.ContainsKey(product.ProductId))
         {
             Store.Products.Remove(product.ProductId);
@@ -57,12 +58,13 @@ public class ProductRepository:IProductRepository
     }
 
     /// <summary>
-    /// 
+    /// Gets the product by the given ID
     /// </summary>
-    /// <param name="id"></param>
-    /// <returns></returns>
+    /// <param name="id">The ID to look for a product</param>
+    /// <returns>Returns the product if found, else returns null</returns>
     public Product GetProductById(int id)
     {
+        // Checks if the dictionary has the id
         if (Store.Products.ContainsKey(id))
         {
             return Store.Products[id];
@@ -72,28 +74,31 @@ public class ProductRepository:IProductRepository
     }
 
     /// <summary>
-    /// 
+    /// Lists all products available
     /// </summary>
-    /// <returns></returns>
+    /// <returns>Returns a list of all products available</returns>
     public List<Product> GetAllProducts()
     {
         return Store.Products.Values.ToList();
     }
 
     /// <summary>
-    /// 
+    /// Searches a product by its name.
     /// </summary>
-    /// <param name="pname"></param>
-    /// <returns></returns>
+    /// <param name="pname">The product's name to search for</param>
+    /// <returns>Returns a list of all results found with the given name.</returns>
     public List<Product> SearchProductName(string pname)
     {
+        // Creates a new list of products, intended to be returned with all the results
         List<Product> results = new List<Product>();
 
+        // Checks if there are no results found
         if (string.IsNullOrEmpty(pname))
         {
             return results;
         }
         
+        // Adds every product found to the list of products
         foreach (Product p in Store.Products.Values)
         {
             if (p.ProductName.ToLower().Contains(pname.ToLower()))
@@ -102,6 +107,7 @@ public class ProductRepository:IProductRepository
             }
         }
 
+        // Returns the list.
         return results;
     }
 

@@ -22,8 +22,6 @@ namespace Rules;
 /// Created by: Edgar Casal
 /// Created on: 17-12-2025 17:44:22
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
 public class UserService
 {
     #region Attributes

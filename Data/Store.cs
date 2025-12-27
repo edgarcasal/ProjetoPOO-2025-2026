@@ -17,8 +17,6 @@ namespace Data;
 /// Created by: Edgar Casal
 /// Created on: 16-12-2025 10:52:33
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
 public static class Store
 {
     #region Attributes
@@ -75,18 +73,6 @@ public static class Store
 
 
     #endregion
-
-    #region OtherMethods
-
-    #endregion
-
-    #region Overrides
-
-    #endregion
-
-    #region Operators
-
-    #endregion
-
+    
     #endregion
 }

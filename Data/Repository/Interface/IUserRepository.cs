@@ -21,8 +21,6 @@ namespace Data.Repository.Interface;
 /// Created by: Edgar Casal
 /// Created on: 18-12-2025 21:47:20
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
 public interface IUserRepository
 {
     /// <summary>

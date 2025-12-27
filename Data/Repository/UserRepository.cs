@@ -19,8 +19,6 @@ namespace Data.Repository;
 /// Created by: Edgar Casal
 /// Created on: 18-12-2025 21:47:11
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
 public class UserRepository:IUserRepository
 {
 
@@ -78,7 +76,7 @@ public class UserRepository:IUserRepository
     }
     
     /// <summary>
-    /// Retrieves all users currently store in the system.
+    /// Retrieves all users currently stored in the system.
     /// </summary>
     /// <returns>A List containing every User object from the Store.</returns>
     public List<User> GetAllUsers()

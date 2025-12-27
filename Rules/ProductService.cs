@@ -10,6 +10,7 @@
 using System;
 using Data.Repository.Interface;
 using BO;
+using Data.Repository;
 
 namespace Rules;
 
@@ -27,6 +28,14 @@ public class ProductService
 
     #endregion
 
+    #region Constructor
+
+    public ProductService()
+    {
+        repository = new ProductRepository();
+    }
+    #endregion
+    
     #region Methods
     /// <summary>
     /// This method registers a new product.

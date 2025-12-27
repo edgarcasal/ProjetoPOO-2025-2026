@@ -36,6 +36,7 @@ public class Order : IComparable
     private DateTime orderDate;
     private User user;
     private OrderStatus status;
+    private double totalPrice;
     
     public List<OrderItem> orderItems;
 
@@ -119,10 +120,38 @@ public class Order : IComparable
         set { status = value; }
     }
     
+    public double TotalPrice
+    {
+        get { return totalPrice; }
+        set
+        {
+            if (value >= 0) totalPrice = value;
+        }
+    }
 
     #endregion
 
     #region OtherMethods
+    
+    
+    /// <summary>
+    /// Calculates the total cost of the order based on the items inside it.
+    /// </summary>
+    public void CalculateTotal()
+    {
+        double sum = 0;
+    
+        // Check if list is not null to avoid crash
+        if (this.OrderItems != null)
+        {
+            foreach (OrderItem item in this.OrderItems)
+            {
+                sum += item.CalculateTotal();
+            }
+        }
+    
+        this.TotalPrice = sum;
+    }
     
     /// <summary>
     /// 

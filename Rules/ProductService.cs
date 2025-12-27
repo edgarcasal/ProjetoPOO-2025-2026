@@ -11,6 +11,7 @@ using System;
 using Data.Repository.Interface;
 using BO;
 using Data.Repository;
+using Exception;
 
 namespace Rules;
 
@@ -53,16 +54,17 @@ public class ProductService
         {
             return false;
         }
-
+        
         //Creates the id for the new product by adding to the count of all current existing products
         int productId = repository.GetAllProducts().Count + 1;
-        
+
         //creates the new product
         Product product = new Product(productId, pname, price, brand, stock);
 
         //Adds the product
         repository.AddProduct(product);
         return true;
+        
     }
 
     /// <summary>

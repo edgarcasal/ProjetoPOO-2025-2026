@@ -8,6 +8,8 @@
 **/
 
 using System;
+using Exception;
+
 
 namespace BO;
 
@@ -57,6 +59,16 @@ public class Product : IComparable
     /// <param name="stock">Quantity of stock for the product</param>
     public Product(int id, string pname, double price, string bname, int stock)
     {
+        if (string.IsNullOrEmpty(pname))
+        {
+            throw new InvalidProductException("A product must have a name.");
+        }
+
+        if (price < 0)
+        {
+            throw new InvalidProductException("Price cannot be negative.");
+        }
+        
         productId = id;
         productName = pname;
         this.price = price;

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Exception.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Exception/1.0.0": {
+      "type": "project",
+      "path": "../Exception/Exception.csproj",
+      "msbuildProject": "../Exception/Exception.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "Exception >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Edgar\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Exception\\Exception.csproj": {
+              "projectPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Exception\\Exception.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

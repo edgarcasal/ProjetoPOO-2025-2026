@@ -5,6 +5,9 @@
       "BO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Exception": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BO.dll": {}
         },
@@ -23,6 +26,16 @@
         },
         "runtime": {
           "bin/placeholder/Data.dll": {}
+        }
+      },
+      "Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Exception.dll": {}
         }
       },
       "Rules/1.0.0": {
@@ -51,6 +64,11 @@
       "type": "project",
       "path": "../Data/Data.csproj",
       "msbuildProject": "../Data/Data.csproj"
+    },
+    "Exception/1.0.0": {
+      "type": "project",
+      "path": "../Exception/Exception.csproj",
+      "msbuildProject": "../Exception/Exception.csproj"
     },
     "Rules/1.0.0": {
       "type": "project",

@@ -42,3 +42,28 @@
 /home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/ComercioEletronico/obj/Debug/net10.0/ComercioEletronico.pdb
 /home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/ComercioEletronico/obj/Debug/net10.0/ComercioEletronico.genruntimeconfig.cache
 /home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/ComercioEletronico/obj/Debug/net10.0/ref/ComercioEletronico.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\ComercioEletronico.exe
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\ComercioEletronico.deps.json
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\ComercioEletronico.runtimeconfig.json
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\ComercioEletronico.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\ComercioEletronico.pdb
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\BO.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\Data.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\Exception.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\Rules.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\BO.pdb
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\Rules.pdb
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\Data.pdb
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\bin\Debug\net10.0\Exception.pdb
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.csproj.AssemblyReference.cache
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.AssemblyInfoInputs.cache
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.AssemblyInfo.cs
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.csproj.CoreCompileInputs.cache
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.sourcelink.json
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\Comercio.1E01ABA0.Up2Date
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\refint\ComercioEletronico.dll
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.pdb
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ComercioEletronico.genruntimeconfig.cache
+C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\ComercioEletronico\obj\Debug\net10.0\ref\ComercioEletronico.dll

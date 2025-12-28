@@ -16,6 +16,9 @@
         }
       },
       "BO/1.0.0": {
+        "dependencies": {
+          "Exception": "1.0.0"
+        },
         "runtime": {
           "BO.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -29,6 +32,14 @@
         },
         "runtime": {
           "Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Exception/1.0.0": {
+        "runtime": {
+          "Exception.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -60,6 +71,11 @@
       "sha512": ""
     },
     "Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Exception/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

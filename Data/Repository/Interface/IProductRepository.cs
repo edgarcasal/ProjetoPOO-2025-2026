@@ -54,4 +54,14 @@ public interface IProductRepository
     /// <param name="pname">The name to search for</param>
     /// <returns>Returns a list of products related to the given name.</returns>
     List<Product> SearchProductName(string pname);
+
+    /// <summary>
+    /// Saves all Products to a binary file
+    /// </summary>
+    void SaveProducts();
+
+    /// <summary>
+    /// Loads all Products from a binary file
+    /// </summary>
+    void LoadProducts();
 }

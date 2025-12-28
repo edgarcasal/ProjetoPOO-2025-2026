@@ -62,7 +62,7 @@ public class UserService
         repository.AddUser(newUser);
         return true;
     }
-
+    
     /// <summary>
     /// Validates credentials and returns the User object if successful.
     /// </summary>
@@ -130,8 +130,27 @@ public class UserService
         aux.Email = newEmail;
         return true;
     }
-
     
+    
+    /// <summary>
+    /// A method needed to be used by the main program layer with the main purpose of saving all user's data.
+    /// It calls the function created in the repository
+    /// It permits keeping the layer structured 
+    /// </summary>
+    public void SaveData()
+    {
+        repository.SaveUsers();
+    }
+
+    /// <summary>
+    /// A method needed to be used by the main program layer with the main purpose of loading all user's data.
+    /// It calls the function created in the repository.
+    /// It permits keeping the layer structured.
+    /// </summary>
+    public void LoadData()
+    {
+        repository.LoadUsers();
+    }
 
     #endregion
 }

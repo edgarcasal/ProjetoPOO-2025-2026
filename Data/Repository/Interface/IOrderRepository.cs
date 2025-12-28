@@ -55,4 +55,13 @@ public interface IOrderRepository
     /// <returns>A list containing every order object from the store.</returns>
     List<Order> GetAllOrders();
 
+    /// <summary>
+    /// Saves all Orders to a binary file
+    /// </summary>
+    void SaveOrders();
+
+    /// <summary>
+    /// Loads all Orders from a binary file
+    /// </summary>
+    void LoadOrders();
 }

@@ -19,8 +19,7 @@ namespace BO;
 /// Created by: Edgar Casal
 /// Created on: 03-11-2025 13:10:30
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
+[Serializable]
 public class Product : IComparable
 {
     #region Attributes

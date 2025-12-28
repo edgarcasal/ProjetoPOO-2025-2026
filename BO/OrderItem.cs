@@ -17,8 +17,7 @@ namespace BO;
 /// Created by: Edgar Casal
 /// Created on: 13-11-2025 21:24:31
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
+[Serializable]
 public class OrderItem : IComparable
 {
     #region Attributes
@@ -42,9 +41,21 @@ public class OrderItem : IComparable
         unitPrice = -1;
         quantity = -1;
     }
+
+    /// <summary>
+    /// Constructor for OrderItem with 2 parameters.
+    /// </summary>
+    /// <param name="p">Product object</param>
+    /// <param name="n">Quantity of the product</param>
+    public OrderItem(Product p, int n)
+    {
+        product = p;
+        quantity = n;
+        unitPrice = product.Price;
+    }
     
     /// <summary>
-    /// Constructor for OrderItem with parameters.
+    /// Constructor for OrderItem with 3 parameters.
     /// </summary>
     /// <param name="p">Product object</param>
     /// <param name="price">Price of the product</param>

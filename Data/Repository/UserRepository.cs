@@ -9,6 +9,11 @@
 using BO;
 using Data.Repository.Interface;
 using System;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Collections.Generic;
+#pragma warning disable SYSLIB0011
 
 namespace Data.Repository;
 
@@ -21,7 +26,8 @@ namespace Data.Repository;
 /// </summary>
 public class UserRepository:IUserRepository
 {
-
+    private const string FILE_PATH = "users.bin";
+    
     #region Methods
 
     /// <summary>
@@ -99,6 +105,90 @@ public class UserRepository:IUserRepository
 
         return false;
     }
-   
+
+
+    /// <summary>
+    /// Saves the current dictionary of users to a binary file
+    /// If the file already exists it is deleted and recreated.
+    /// </summary>
+    public void SaveUsers()
+    {
+        FileStream fs = null;
+
+        try
+        {
+            //If exists, deletes it first to start over
+            if (File.Exists(FILE_PATH))
+            {
+                File.Delete(FILE_PATH);
+            }
+
+            //Creates the file
+            fs = File.Create(FILE_PATH);
+
+            //Serialize the dictionary
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(fs, Store.Users);
+        }
+        catch (System.Exception e)
+        {
+            Console.WriteLine("Error saving file: " + e.Message);
+        }
+        finally
+        {
+            if (fs != null)
+            {
+                fs.Close();
+            }
+        }
+    }
+
+    /// <summary>
+    /// Loads user data from the binary file
+    /// This method clears the existing 'Store.Users' dictionary before to avoid duplicate conflicts.
+    /// If the file does not exist, it ensures the Store remains empty but valid.
+    /// </summary>
+    public void LoadUsers()
+    {
+        FileStream fs = null;
+
+        try
+        {
+            //Checks if file exists
+            if (File.Exists(FILE_PATH))
+            {
+                //Opens the file
+                fs = File.Open(FILE_PATH, FileMode.Open);
+                BinaryFormatter bf = new BinaryFormatter();
+                
+                // Deserialize to a temporary dictionary
+                Dictionary<int, User> tempUsers = (Dictionary<int, User>)bf.Deserialize(fs);
+               
+                // Clears the existing Store to avoid duplicates
+                Store.Users.Clear();
+
+                foreach (KeyValuePair<int, User> entry in tempUsers)
+                {
+                    //where entry.Key is the id and entry.value is the user object
+                    Store.Users.Add(entry.Key, entry.Value);
+                }
+                
+            }
+        }
+        catch (System.Exception e)
+        {
+            Console.WriteLine("Error loading file: " + e.Message);
+            // File might be corrupted so it starts fresh
+            Store.Users.Clear();
+        }
+        finally
+        {
+            if (fs != null)
+            {
+                fs.Close();
+            }
+        }
+    }
+
     #endregion
 }

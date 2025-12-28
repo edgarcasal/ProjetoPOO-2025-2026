@@ -56,4 +56,15 @@ public interface IUserRepository
     /// <param name="id">The ID of the user to remove</param>
     /// <returns>True if the user was found and removed.</returns>
     bool RemoveUser(int id);
+
+    /// <summary>
+    /// Saves all Users to a binary file
+    /// </summary>
+    void SaveUsers();
+
+    /// <summary>
+    /// Loads all Users from a binary file
+    /// </summary>
+    void LoadUsers();
+
 }

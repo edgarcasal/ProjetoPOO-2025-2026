@@ -107,5 +107,46 @@ public class ProductService
         return repository.SearchProductName(pname);
     }
 
+    /// <summary>
+    /// The purpose of this method is to be able to use it in the main program layer without accessing the data layer.
+    /// It calls the function GetProductById.
+    /// </summary>
+    /// <param name="id">ID to look for to get the product object</param>
+    /// <returns>The product object if found by the id</returns>
+    public Product GetProductById(int id)
+    {
+        return repository.GetProductById(id);
+    }
+    
+    /// <summary>
+    /// The purpose of this method is to be able to use it in the main program layer without accessing the data layer.
+    /// It calls the function GetAllProducts.
+    /// </summary>
+    /// <returns>A List of all products</returns>
+    public List<Product> GetAllProducts()
+    {
+        return repository.GetAllProducts();
+    }
+
+    /// <summary>
+    /// A method needed to be used by the main program layer with the main purpose of saving all products' data.
+    /// It calls the function created in the repository
+    /// It permits keeping the layer structured 
+    /// </summary>
+    public void SaveData()
+    {
+        repository.SaveProducts();
+    }
+
+    /// <summary>
+    /// A method needed to be used by the main program layer with the main purpose of loading all products' data.
+    /// It calls the function created in the repository.
+    /// It permits keeping the layer structured.
+    /// </summary>
+    public void LoadData()
+    {
+        repository.LoadProducts();
+    }
+
     #endregion
 }

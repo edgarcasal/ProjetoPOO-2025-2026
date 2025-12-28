@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "BO/1.0.0": {
+        "dependencies": {
+          "Exception": "1.0.0"
+        },
         "runtime": {
           "BO.dll": {}
+        }
+      },
+      "Exception/1.0.0": {
+        "runtime": {
+          "Exception.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "BO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Exception/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -10,6 +10,9 @@
 using System;
 using BO;
 using Data.Repository.Interface;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+#pragma warning disable SYSLIB0011
 
 namespace Data.Repository;
 
@@ -20,6 +23,8 @@ namespace Data.Repository;
 /// </summary>
 public class OrderRepository:IOrderRepository
 {
+    
+    private const string FILE_PATH = "orders.bin";
 
     #region Methods
 
@@ -103,5 +108,87 @@ public class OrderRepository:IOrderRepository
         return Store.Orders.Values.ToList();
     }
 
+    /// <summary>
+    /// Saves the current dictionary of orders to a binary file
+    /// If the file already exists it is deleted and recreated.
+    /// </summary>
+    public void SaveOrders()
+    {
+        FileStream fs = null;
+
+        try
+        {
+            //If exists, deletes it first to start over
+            if (File.Exists(FILE_PATH))
+            {
+                File.Delete(FILE_PATH);
+            }
+
+            //Creates the file
+            fs = File.Create(FILE_PATH);
+
+            //Serialize the dictionary
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(fs, Store.Orders);
+        }
+        catch (System.Exception e)
+        {
+            Console.WriteLine("Error saving file: " + e.Message);
+        }
+        finally
+        {
+            if (fs != null)
+            {
+                fs.Close();
+            }
+        }
+    }
+    
+    /// <summary>
+    /// Loads order data from the binary file
+    /// This method clears the existing 'Store.Orders' dictionary before to avoid duplicate conflicts.
+    /// If the file does not exist, it ensures the Store remains empty but valid.
+    /// </summary>
+    public void LoadOrders()
+    {
+        FileStream fs = null;
+
+        try
+        {
+            //Checks if file exists
+            if (File.Exists(FILE_PATH))
+            {
+                //Opens the file
+                fs = File.Open(FILE_PATH, FileMode.Open);
+                BinaryFormatter bf = new BinaryFormatter();
+                
+                // Deserialize to a temporary dictionary
+                Dictionary<int, Order> tempOrders = (Dictionary<int, Order>)bf.Deserialize(fs);
+               
+                // Clears the existing Store to avoid duplicates
+                Store.Orders.Clear();
+
+                foreach (KeyValuePair<int, Order> entry in tempOrders)
+                {
+                    //where entry.Key is the id and entry.value is the product object
+                    Store.Orders.Add(entry.Key, entry.Value);
+                }
+                
+            }
+        }
+        catch (System.Exception e)
+        {
+            Console.WriteLine("Error loading file: " + e.Message);
+            // File might be corrupted so it starts fresh
+            Store.Orders.Clear();
+        }
+        finally
+        {
+            if (fs != null)
+            {
+                fs.Close();
+            }
+        }
+    }
     #endregion
 }

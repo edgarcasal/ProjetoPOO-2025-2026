@@ -26,8 +26,7 @@ public enum OrderStatus
 /// Created by: Edgar Casal
 /// Created on: 03-11-2025 13:25:27
 /// </summary>
-/// <remarks></remarks>
-/// <example></example>
+[Serializable]
 public class Order : IComparable
 {
     #region Attributes

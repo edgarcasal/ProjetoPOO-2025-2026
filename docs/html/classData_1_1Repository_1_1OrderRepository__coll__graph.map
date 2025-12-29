@@ -1,0 +1,5 @@
+<map id="Data.Repository.OrderRepository" name="Data.Repository.OrderRepository">
+<area shape="rect" id="Node000001" title="Purpose: The Data Access Layer for Orders. Created by: Edgar Casal Created on: 26&#45;12&#45;2025 15:22:29." alt="" coords="5,239,232,424"/>
+<area shape="rect" id="Node000002" href="$interfaceData_1_1Repository_1_1Interface_1_1IOrderRepository.html" title="Purpose: Defines the contract for accessing Order data. Any class that implements this interface must..." alt="" coords="46,5,191,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,205,121,238,116,238,116,205"/>
+</map>

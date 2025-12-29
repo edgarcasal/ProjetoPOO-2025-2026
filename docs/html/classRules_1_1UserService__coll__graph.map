@@ -1,0 +1,5 @@
+<map id="Rules.UserService" name="Rules.UserService">
+<area shape="rect" id="Node000001" title="Purpose: Responsible for all business rules related to Users. Handles account creation,..." alt="" coords="22,268,171,473"/>
+<area shape="rect" id="Node000002" href="$interfaceData_1_1Repository_1_1Interface_1_1IUserRepository.html" title="Purpose: Defines the contract for accessing User data. Any class that implements this interface must ..." alt="" coords="5,5,188,205"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,206,99,251,94,251,94,206"/>
+</map>

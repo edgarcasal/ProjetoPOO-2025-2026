@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['_2enetcoreapp_2cversion_3dv10_2e0_2eassemblyattributes_2ecs_0',['.netcoreapp,version=v10.0.assemblyattributes.cs',['../BO_2obj_2Debug_2net10_80_2_8NETCoreApp_00Version_0av10_80_8AssemblyAttributes_8cs.html',1,'(Global Namespace)'],['../ComercioEletronico_2obj_2Debug_2net10_80_2_8NETCoreApp_00Version_0av10_80_8AssemblyAttributes_8cs.html',1,'(Global Namespace)'],['../Data_2obj_2Debug_2net10_80_2_8NETCoreApp_00Version_0av10_80_8AssemblyAttributes_8cs.html',1,'(Global Namespace)'],['../Exception_2obj_2Debug_2net10_80_2_8NETCoreApp_00Version_0av10_80_8AssemblyAttributes_8cs.html',1,'(Global Namespace)'],['../Rules_2obj_2Debug_2net10_80_2_8NETCoreApp_00Version_0av10_80_8AssemblyAttributes_8cs.html',1,'(Global Namespace)'],['../Tests_2obj_2Debug_2net10_80_2_8NETCoreApp_00Version_0av10_80_8AssemblyAttributes_8cs.html',1,'(Global Namespace)']]]
+];

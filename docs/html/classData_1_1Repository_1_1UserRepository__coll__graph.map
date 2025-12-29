@@ -1,0 +1,5 @@
+<map id="Data.Repository.UserRepository" name="Data.Repository.UserRepository">
+<area shape="rect" id="Node000001" title="Purpose: The Data Access Layer for Users. Implements the logic to Save, Load, and Search users in the..." alt="" coords="5,239,227,424"/>
+<area shape="rect" id="Node000002" href="$interfaceData_1_1Repository_1_1Interface_1_1IUserRepository.html" title="Purpose: Defines the contract for accessing User data. Any class that implements this interface must ..." alt="" coords="43,5,189,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,205,119,238,113,238,113,205"/>
+</map>

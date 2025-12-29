@@ -1,5 +1,0 @@
-<map id="Data.Repository.Interface.IProductRepository" name="Data.Repository.Interface.IProductRepository">
-<area shape="rect" id="Node000001" title="Purpose: Defines the contract for accessing Product data. Any class that implements this interface mu..." alt="" coords="34,5,217,205"/>
-<area shape="rect" id="Node000002" href="$classData_1_1Repository_1_1ProductRepository.html" title="Purpose: The Data Access Layer for Products. Created by: Edgar Casal Created on: 26&#45;12&#45;2025 14:31:13." alt="" coords="5,253,245,439"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,219,128,253,123,253,123,219"/>
-</map>

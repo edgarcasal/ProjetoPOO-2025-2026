@@ -1,8 +1,0 @@
-<map id="BO.OrderItem" name="BO.OrderItem">
-<area shape="rect" id="Node000001" title="Purpose: The purpose of this class is to connect a specific Product to a specific Order and store the..." alt="" coords="5,568,136,813"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="17,5,114,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,84,72,567,67,567,63,84"/>
-<area shape="rect" id="Node000003" href="$classBO_1_1Product.html" title="Purpose: The purpose of this class is to hold all the details about the item that can be sold...." alt="" coords="87,120,217,505"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="82,83,94,119,88,121,77,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,506,103,552,98,551,108,505"/>
-</map>

@@ -17,3 +17,7 @@ release/
 .settings/
 .DS_Store
 Thumbs.db
+html/
+latex/
+*.db
+docs/html/

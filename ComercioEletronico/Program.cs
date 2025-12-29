@@ -29,6 +29,20 @@ namespace ComercioEletronico
             productService.LoadData();
             orderService.LoadData();
 
+            List<User> loadedUsers = userService.GetAllUsers();
+            if (loadedUsers.Count == 0)
+            {
+                Console.WriteLine("Database is empty.");
+            }
+            else
+            {
+                Console.WriteLine($"Sucess! Loaded {loadedUsers.Count} users from file:  ");
+                foreach (User u in loadedUsers)
+                {
+                    Console.WriteLine($" - ID: {u.UserId} | Name: {u.FirstName + " " + u.LastName} | Email: {u.Email}");
+                }
+            }
+
             // --- 3. Adding information for testing ---
             if (userService.Login("admin@store.com", "admin123") == null)
             {

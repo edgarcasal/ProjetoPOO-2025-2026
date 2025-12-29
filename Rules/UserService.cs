@@ -152,5 +152,14 @@ public class UserService
         repository.LoadUsers();
     }
 
+    /// <summary>
+    /// Gets a list of all registered users from the system.
+    /// </summary>
+    /// <returns>A list containing all User objects found in the database.</returns>
+    public List<User> GetAllUsers()
+    {
+        return repository.GetAllUsers();
+    }
+
     #endregion
 }

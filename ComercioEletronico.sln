@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rules", "Rules\Rules.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception", "Exception\Exception.csproj", "{81FD1D75-31FA-4840-9A9D-C37439FED6DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{87FBEAAA-CBDC-4219-B0E1-79AF84D8EF33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{81FD1D75-31FA-4840-9A9D-C37439FED6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81FD1D75-31FA-4840-9A9D-C37439FED6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81FD1D75-31FA-4840-9A9D-C37439FED6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87FBEAAA-CBDC-4219-B0E1-79AF84D8EF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FBEAAA-CBDC-4219-B0E1-79AF84D8EF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FBEAAA-CBDC-4219-B0E1-79AF84D8EF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FBEAAA-CBDC-4219-B0E1-79AF84D8EF33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

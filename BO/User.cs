@@ -127,16 +127,20 @@ public class User : IComparable
     #region OtherMethods
     
     /// <summary>
-    /// 
+    /// Compares this User iwth another object to determine their order.
+    /// Users are compared based on their unique ID.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object to campare with this User.</param>
+    /// <returns>A value less than 0 if this User comes before the other
+    /// 0 if they are in the same position
+    /// greater than 0 if this User comes after.</returns>
     public int CompareTo(object obj)
     {
         User aux = obj as User;
         
         if (aux == null)
         {
+            //Current user is greater than null
             return 1;
         }
         return this.UserId.CompareTo(aux.UserId);
@@ -147,10 +151,11 @@ public class User : IComparable
     #region Overrides
 
     /// <summary>
-    /// 
+    /// Determines whether the specified object is equal to the current User.
+    /// Equality is defined by matching User IDs
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object to compare with the current object.</param>
+    /// <returns>True if the specified object is a User with the same ID, otherwise false.</returns>
     public override bool Equals(object obj)
     {
         User aux;
@@ -163,18 +168,20 @@ public class User : IComparable
     }
 
     /// <summary>
-    /// 
+    /// Returns a string representing the User's essential details.
+    /// Format: [ID] - Full Name | Email
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A formatted string containing the ID, Name, and Email.</returns>
     public override string ToString()
     {
         return $"[{UserId}] - {FirstName + " " + LastName} | {Email}";
     }
 
     /// <summary>
-    /// 
+    /// Returns the hash code for this User.
+    /// THis code is generated using the unique User ID.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A hash code integer.</returns>
     public override int GetHashCode()
     {
         return userId.GetHashCode();

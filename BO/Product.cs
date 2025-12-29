@@ -116,6 +116,9 @@ public class Product : IComparable
     }
     #endregion
 
+    /// <summary>
+    /// Gets the stock quantity of the Product.
+    /// </summary>
     public int StockQuantity
     {
         get { return stockQuantity; }
@@ -156,10 +159,13 @@ public class Product : IComparable
     }
     
     /// <summary>
-    /// 
+    /// Compares this Product with another object to determine their sort order.
+    /// Products are compared based on their unique Product ID.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object to compare with this Product.</param>
+    /// <returns>A value less than 0 if this Product precedes the other; 
+    /// 0 if they are in the same position; 
+    /// greater than 0 if this Product follows the other.</returns>
     public int CompareTo(object obj)
     {
         Product aux = obj as Product;
@@ -177,10 +183,11 @@ public class Product : IComparable
     #region Overrides
 
     /// <summary>
-    /// 
+    /// Determines whether the specified object is equal to the current Product.
+    /// Equality is defined by matching Product IDs.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object to compare with the current Product.</param>
+    /// <returns>True if the specified object is a Product with the same ID, otherwise false.</returns>
     public override bool Equals(object obj)
     {
         Product aux;
@@ -194,18 +201,20 @@ public class Product : IComparable
     }
 
     /// <summary>
-    /// 
+    /// Returns a hash code for this Product.
+    /// This code is generated using the unique Product ID.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A hash code integer.</returns>
     public override int GetHashCode()
     {
         return ProductId.GetHashCode();
     }
 
     /// <summary>
-    /// 
+    /// Returns a string representing the Product's details.
+    /// Format: [ID] Name - Brand | Price€ | Stock
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A formatted string containing ID, name, brand, price, and stock quantity.</returns>
     public override string ToString()
     {
         return $"[{ProductId}] {ProductName} - {BrandName} | {Price}€ | {StockQuantity}";

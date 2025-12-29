@@ -114,14 +114,19 @@ public class OrderItem : IComparable
     }
     
     /// <summary>
-    /// 
+    /// Compares this OrderItem with another object based on the associated Product.
+    /// This allows lists of OrderItems to be sorted by Product ID.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object to compare with this OrderItem.</param>
+    /// <returns>A value indicating the relative order. 
+    /// Returns 1 if the other object or the products are null (placing this item after).
+    /// Otherwise, returns the result of the Product comparison.</returns>
     public int CompareTo(object obj)
     {
         OrderItem aux = obj as OrderItem;
         
+        // If the other item is null, or if either product is missing,
+        // we consider 'this' item to be "greater" (put it at the end).
         if (aux == null || this.product == null || aux.product == null)
         {
             return 1;
@@ -135,9 +140,10 @@ public class OrderItem : IComparable
     #region Overrides
 
     /// <summary>
-    /// 
+    /// Returns a string representing the receipt line for this item.
+    /// Format: ProductName (Quantity) - TotalPrice€
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A formatted string showing what was bought and the total cost for this line.</returns>
     public override string ToString()
     {
         string pName = product.ProductName;

@@ -96,7 +96,7 @@ public class Order : IComparable
     }
 
     /// <summary>
-    /// 
+    /// Gets or sets the User who placed this order.
     /// </summary>
     public User User
     {
@@ -105,7 +105,7 @@ public class Order : IComparable
     }
 
     /// <summary>
-    /// 
+    /// Gets or sets the list of items (products and quantities) included in this order.
     /// </summary>
     public List<OrderItem> OrderItems
     {
@@ -113,12 +113,19 @@ public class Order : IComparable
         set { orderItems = value; }
     }
 
+    /// <summary>
+    /// Gets or sets the current status of the order (e.g., Pending, Paid, Sent).
+    /// </summary>
     public OrderStatus OrderStatus
     {
         get { return status; }
         set { status = value; }
     }
     
+    /// <summary>
+    /// Gets or sets the total monetary value of the order.
+    /// The setter includes validation to prevent negative prices. 
+    /// </summary>
     public double TotalPrice
     {
         get { return totalPrice; }
@@ -153,10 +160,13 @@ public class Order : IComparable
     }
     
     /// <summary>
-    /// 
+    /// Compares this Order with another object to determine their sort order.
+    /// Orders are compared chronologically based on their creation Date and Time.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object to compare with this Order.</param>
+    /// <returns>A value less than 0 if this Order is older (earlier date); 
+    /// 0 if they occurred at the same time; 
+    /// greater than 0 if this Order is newer (later date).</returns>
     public int CompareTo(object obj)
     {
         Order aux = obj as Order;
@@ -173,10 +183,11 @@ public class Order : IComparable
     #region Overrides
     
     /// <summary>
-    /// 
+    /// Determines whether the specified object is equal to the current Order.
+    /// Equality is defined by matching Order IDs.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object to compare with the current Order.</param>
+    /// <returns>True if the specified object is an Order with the same ID, otherwise false.</returns>
     public override bool Equals(object obj)
     {
         Order aux;
@@ -190,22 +201,23 @@ public class Order : IComparable
     }
 
     /// <summary>
-    /// 
+    /// Returns a hash code for this Order.
+    /// This code is generated using the unique Order ID.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A hash code integer.</returns>
     public override int GetHashCode()
     {
         return OrderId.GetHashCode();
     }
 
     /// <summary>
-    /// 
+    /// Returns a string representing the Order's summary.
+    /// Format: Order #ID [Status] - Date | User: Full Name
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A formatted string containing ID, status, date, and customer name.</returns>
     public override string ToString()
     {
-        return
-            $"Order #{OrderId} [{OrderStatus}] - {DateTime.ToShortDateString()} | User: {User.FirstName + " " + User.LastName}";
+        return $"Order #{OrderId} [{OrderStatus}] - {DateTime.ToShortDateString()} | User: {User.FirstName + " " + User.LastName}";
     }
 
     #endregion

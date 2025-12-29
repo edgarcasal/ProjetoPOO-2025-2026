@@ -15,7 +15,7 @@ This is an N-Tier architecture console application for managing users, products,
 - Order Processing
 - Automated Documentation (Doxygen)
 
-- ## Author
+## Author
 
 - **Edgar Casal**
 - Student No. 31026

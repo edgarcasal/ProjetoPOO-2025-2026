@@ -159,19 +159,25 @@ public class UserRepository:IUserRepository
             {
                 //Opens the file
                 fs = File.Open(FILE_PATH, FileMode.Open);
-                BinaryFormatter bf = new BinaryFormatter();
-                
-                // Deserialize to a temporary dictionary
-                Dictionary<int, User> tempUsers = (Dictionary<int, User>)bf.Deserialize(fs);
-               
-                // Clears the existing Store to avoid duplicates
-                Store.Users.Clear();
 
-                foreach (KeyValuePair<int, User> entry in tempUsers)
-                {
-                    //where entry.Key is the id and entry.value is the user object
-                    Store.Users.Add(entry.Key, entry.Value);
+                // Checks if the file has data
+                if (fs.Length > 0)
+                { 
+                    BinaryFormatter bf = new BinaryFormatter();
+                
+                    // Deserialize to a temporary dictionary
+                    Dictionary<int, User> tempUsers = (Dictionary<int, User>)bf.Deserialize(fs);
+               
+                    // Clears the existing Store to avoid duplicates
+                    Store.Users.Clear();
+
+                    foreach (KeyValuePair<int, User> entry in tempUsers)
+                    {
+                        //where entry.Key is the id and entry.value is the user object
+                        Store.Users.Add(entry.Key, entry.Value);
+                    }
                 }
+
                 
             }
         }

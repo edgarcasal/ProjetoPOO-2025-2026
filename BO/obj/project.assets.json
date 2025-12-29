@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Edgar\\.nuget\\packages\\": {}
+    "/home/quedas/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\BO\\BO.csproj",
+      "projectUniqueName": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/BO/BO.csproj",
       "projectName": "BO",
-      "projectPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\BO\\BO.csproj",
-      "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\BO\\obj\\",
+      "projectPath": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/BO/BO.csproj",
+      "packagesPath": "/home/quedas/.nuget/packages/",
+      "outputPath": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/BO/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/quedas/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -51,8 +51,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Exception\\Exception.csproj": {
-              "projectPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Exception\\Exception.csproj"
+            "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Exception/Exception.csproj": {
+              "projectPath": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Exception/Exception.csproj"
             }
           }
         }
@@ -88,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Edgar\\.dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/home/quedas/.dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

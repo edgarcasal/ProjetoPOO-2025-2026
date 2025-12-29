@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net10.0": {
+      "System.Runtime.Serialization.Formatters/10.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Runtime.Serialization.Formatters.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Runtime.Serialization.Formatters.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "BO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -19,7 +32,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "BO": "1.0.0"
+          "BO": "1.0.0",
+          "System.Runtime.Serialization.Formatters": "10.0.1"
         },
         "compile": {
           "bin/placeholder/Data.dll": {}
@@ -41,6 +55,23 @@
     }
   },
   "libraries": {
+    "System.Runtime.Serialization.Formatters/10.0.1": {
+      "sha512": "yYAGM4cEXxcN7Lu/CVeIBX/a9ZeMlJlpfW5pk+1RD3CcWLN78zngM+94aSm5LJUMusjyjH/Rw39J6q30ZwFhRw==",
+      "type": "package",
+      "path": "system.runtime.serialization.formatters/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/System.Runtime.Serialization.Formatters.dll",
+        "lib/net8.0/System.Runtime.Serialization.Formatters.xml",
+        "system.runtime.serialization.formatters.10.0.1.nupkg.sha512",
+        "system.runtime.serialization.formatters.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "BO/1.0.0": {
       "type": "project",
       "path": "../BO/BO.csproj",
@@ -64,19 +95,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Edgar\\.nuget\\packages\\": {}
+    "/home/quedas/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Rules\\Rules.csproj",
+      "projectUniqueName": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/Rules.csproj",
       "projectName": "Rules",
-      "projectPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Rules\\Rules.csproj",
-      "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Rules\\obj\\",
+      "projectPath": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/Rules.csproj",
+      "packagesPath": "/home/quedas/.nuget/packages/",
+      "outputPath": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/quedas/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -88,11 +119,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\BO\\BO.csproj": {
-              "projectPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\BO\\BO.csproj"
+            "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/BO/BO.csproj": {
+              "projectPath": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/BO/BO.csproj"
             },
-            "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\Edgar\\Documents\\IPCA\\Programação Orientada a Objetos\\trabalhoPOO_31026\\ProjetoPOO-2025-2026\\Data\\Data.csproj"
+            "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/Data.csproj": {
+              "projectPath": "/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Data/Data.csproj"
             }
           }
         }
@@ -128,7 +159,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Edgar\\.dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/home/quedas/.dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

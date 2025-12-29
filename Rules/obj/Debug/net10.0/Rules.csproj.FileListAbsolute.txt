@@ -32,23 +32,26 @@
 /home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/refint/Rules.dll
 /home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.pdb
 /home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/ref/Rules.dll
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\Rules.deps.json
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\Rules.dll
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\Rules.pdb
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\BO.dll
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\Data.dll
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\Exception.dll
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\BO.pdb
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\Data.pdb
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\bin\Debug\net10.0\Exception.pdb
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.csproj.AssemblyReference.cache
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.AssemblyInfoInputs.cache
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.AssemblyInfo.cs
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.csproj.CoreCompileInputs.cache
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.sourcelink.json
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.csproj.Up2Date
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.dll
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\refint\Rules.dll
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\Rules.pdb
-C:\Users\Edgar\Documents\IPCA\Programação Orientada a Objetos\trabalhoPOO_31026\ProjetoPOO-2025-2026\Rules\obj\Debug\net10.0\ref\Rules.dll
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/Rules.deps.json
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/Rules.dll
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/Rules.pdb
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/BO.dll
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/Data.dll
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/Exception.dll
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/BO.pdb
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/Data.pdb
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/bin/Debug/net10.0/Exception.pdb
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.csproj.AssemblyReference.cache
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.AssemblyInfoInputs.cache
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.AssemblyInfo.cs
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.csproj.CoreCompileInputs.cache
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.sourcelink.json
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.csproj.Up2Date
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.dll
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/refint/Rules.dll
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/Rules.pdb
+C:/Users/Edgar/Documents/IPCA/Programação Orientada a Objetos/trabalhoPOO_31026/ProjetoPOO-2025-2026/Rules/obj/Debug/net10.0/ref/Rules.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/Exception.dll
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/bin/Debug/net10.0/Exception.pdb
+/home/quedas/Documents/IPCA/2 Ano/Programação Orientada a Objetos/ProjetoPOO-2025-2026/ComercioEletronico/Rules/obj/Debug/net10.0/Rules.sourcelink.json

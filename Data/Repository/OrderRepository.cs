@@ -160,18 +160,23 @@ public class OrderRepository:IOrderRepository
             {
                 //Opens the file
                 fs = File.Open(FILE_PATH, FileMode.Open);
-                BinaryFormatter bf = new BinaryFormatter();
-                
-                // Deserialize to a temporary dictionary
-                Dictionary<int, Order> tempOrders = (Dictionary<int, Order>)bf.Deserialize(fs);
-               
-                // Clears the existing Store to avoid duplicates
-                Store.Orders.Clear();
 
-                foreach (KeyValuePair<int, Order> entry in tempOrders)
+                // Checks if file has data
+                if (fs.Length > 0)
                 {
-                    //where entry.Key is the id and entry.value is the product object
-                    Store.Orders.Add(entry.Key, entry.Value);
+                    BinaryFormatter bf = new BinaryFormatter();
+                
+                    // Deserialize to a temporary dictionary
+                    Dictionary<int, Order> tempOrders = (Dictionary<int, Order>)bf.Deserialize(fs);
+               
+                    // Clears the existing Store to avoid duplicates
+                    Store.Orders.Clear();
+
+                    foreach (KeyValuePair<int, Order> entry in tempOrders)
+                    {
+                        //where entry.Key is the id and entry.value is the product object
+                        Store.Orders.Add(entry.Key, entry.Value);
+                    }
                 }
                 
             }

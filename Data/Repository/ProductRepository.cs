@@ -169,20 +169,26 @@ public class ProductRepository:IProductRepository
             {
                 //Opens the file
                 fs = File.Open(FILE_PATH, FileMode.Open);
-                BinaryFormatter bf = new BinaryFormatter();
-                
-                // Deserialize to a temporary dictionary
-                Dictionary<int, Product> tempProducts = (Dictionary<int, Product>)bf.Deserialize(fs);
-               
-                // Clears the existing Store to avoid duplicates
-                Store.Products.Clear();
 
-                foreach (KeyValuePair<int, Product> entry in tempProducts)
+                // Checks if file has data
+                if (fs.Length > 0)
                 {
-                    //where entry.Key is the id and entry.value is the product object
-                    Store.Products.Add(entry.Key, entry.Value);
-                }
+                    BinaryFormatter bf = new BinaryFormatter();
                 
+                    // Deserialize to a temporary dictionary
+                    Dictionary<int, Product> tempProducts = (Dictionary<int, Product>)bf.Deserialize(fs);
+               
+                    // Clears the existing Store to avoid duplicates
+                    Store.Products.Clear();
+
+                    foreach (KeyValuePair<int, Product> entry in tempProducts)
+                    {
+                        //where entry.Key is the id and entry.value is the product object
+                        Store.Products.Add(entry.Key, entry.Value);
+                    }
+
+                }
+
             }
         }
         catch (System.Exception e)

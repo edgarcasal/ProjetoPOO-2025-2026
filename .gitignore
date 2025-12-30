@@ -21,3 +21,4 @@ html/
 latex/
 *.db
 docs/html/
+*.DotSettings.user

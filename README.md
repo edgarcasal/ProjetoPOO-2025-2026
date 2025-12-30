@@ -7,7 +7,9 @@ This is an N-Tier architecture console application for managing users, products,
 - **BO:** Business Objects (Entities)
 - **Data:** Repositories and File Storage (Binary)
 - **Rules:** Business Logic (Services)
-- **Program:** Console UI
+- **Exception:** Custom Error Handling
+- **Tests:** Unit Testing Project (MSTest)
+- **Program (ComercioEletronico):** Console UI
 
 ## Features
 - User Authentication (Client)
